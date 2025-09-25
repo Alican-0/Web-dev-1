@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #007bff;
+    --background-color: #55b494;
+    --text-color: #333;
+    --header-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
+}
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-family: var(--header-font);
+}
+.main-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #439696;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.main-nav li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.main-nav li a:hover {
+    color: var(--primary-color);
+}
+#hakkimda {
+    background-color: #55b494;
+}
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.bio-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.bio-text {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    font-weight: 1000;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.image-gallery img {
+    max-width: 300px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.video-wrapper {
+  position: relative;
+  width: 60%; 
+  max-width: 500px; 
+  aspect-ratio: 16 / 9; 
+}
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; 
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+    .bio-container {
+        flex-direction: row;
+        text-align: left;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .bio-image {
+        flex-shrink: 0;
+    }
+
+    .bio-text {
+        text-align: left;
+    }
+}
