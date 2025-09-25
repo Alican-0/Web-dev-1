@@ -1,4 +1,4 @@
 # Benim Kişisel Web Sitem
 
 Bu proje, bir kişisel web sitesi örneğidir.
-Canlı siteyi buradan görebilirsiniz: [Web Sitesi](https://alican-0.github.io/Web-dev-1/)
+Canlı siteyi buradan görebilirsiniz: [Web Sitesi](https://web-dev-1-eta.vercel.app/)
